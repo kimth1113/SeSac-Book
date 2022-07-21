@@ -69,6 +69,97 @@
             </objects>
             <point key="canvasLocation" x="1244.9275362318842" y="154.6875"/>
         </scene>
+        <!--Search View Controller-->
+        <scene sceneID="H63-cw-peb">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="h9N-Ub-Zv4" customClass="SearchViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VyM-l0-4kf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ug-LZ-jQy">
+                                <rect key="frame" x="20" y="426" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tBk-qQ-c5H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OC9-wI-air"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5ug-LZ-jQy" firstAttribute="centerX" secondItem="VyM-l0-4kf" secondAttribute="centerX" id="NI8-x7-FBM"/>
+                            <constraint firstItem="OC9-wI-air" firstAttribute="trailing" secondItem="5ug-LZ-jQy" secondAttribute="trailing" constant="20" id="U27-Mm-h01"/>
+                            <constraint firstItem="5ug-LZ-jQy" firstAttribute="centerY" secondItem="VyM-l0-4kf" secondAttribute="centerY" id="caz-in-cdq"/>
+                            <constraint firstItem="5ug-LZ-jQy" firstAttribute="leading" secondItem="OC9-wI-air" secondAttribute="leading" constant="20" id="myc-iY-Uu3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTX-aZ-pwk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2074" y="155"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="jQZ-14-vCZ">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="YqF-2h-jgi" customClass="DetailViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OYh-wM-aHJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vN8-b2-wWc">
+                                <rect key="frame" x="107" y="426" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="HjS-RH-0T3"/>
+                                    <constraint firstAttribute="width" constant="200" id="N6j-kY-jMN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tapToWebViewButton:" destination="YqF-2h-jgi" eventType="touchUpInside" id="Ihf-w1-Wc1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lhI-4t-Ecg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vN8-b2-wWc" firstAttribute="centerY" secondItem="OYh-wM-aHJ" secondAttribute="centerY" id="Qdo-Op-f9G"/>
+                            <constraint firstItem="vN8-b2-wWc" firstAttribute="centerX" secondItem="OYh-wM-aHJ" secondAttribute="centerX" id="e4Y-pK-CuP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="toWebViewButton" destination="vN8-b2-wWc" id="MZ3-5C-4q0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j1O-zz-k7g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2883" y="155"/>
+        </scene>
+        <!--Link Info View Controller-->
+        <scene sceneID="s12-qr-msC">
+            <objects>
+                <viewController storyboardIdentifier="LinkInfoViewController" id="Siz-fk-t2b" customClass="LinkInfoViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5wG-Es-HsP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpL-PG-qKH">
+                                <rect key="frame" x="186" y="438" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mas-ac-ef0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QdY-hM-T2F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3704" y="155"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="G3k-yX-3LQ">
             <objects>

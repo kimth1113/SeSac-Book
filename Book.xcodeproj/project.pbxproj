@@ -16,6 +16,9 @@
 		8C0FFB8D2889A6E800E15177 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0FFB8C2889A6E800E15177 /* Movie.swift */; };
 		8C0FFB8F2889A80B00E15177 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0FFB8E2889A80A00E15177 /* MainCollectionViewController.swift */; };
 		8C0FFB912889A87800E15177 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0FFB902889A87800E15177 /* MainCollectionViewCell.swift */; };
+		8C0FFB932889C1E600E15177 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0FFB922889C1E600E15177 /* SearchViewController.swift */; };
+		8C0FFB952889C9E200E15177 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0FFB942889C9E200E15177 /* DetailViewController.swift */; };
+		8C0FFB972889CC7C00E15177 /* LinkInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0FFB962889CC7C00E15177 /* LinkInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		8C0FFB8C2889A6E800E15177 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		8C0FFB8E2889A80A00E15177 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		8C0FFB902889A87800E15177 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		8C0FFB922889C1E600E15177 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8C0FFB942889C9E200E15177 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8C0FFB962889CC7C00E15177 /* LinkInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				8C0FFB792889A54300E15177 /* Main.storyboard */,
+				8C0FFB962889CC7C00E15177 /* LinkInfoViewController.swift */,
+				8C0FFB942889C9E200E15177 /* DetailViewController.swift */,
 				8C0FFB8E2889A80A00E15177 /* MainCollectionViewController.swift */,
 				8C0FFB902889A87800E15177 /* MainCollectionViewCell.swift */,
+				8C0FFB922889C1E600E15177 /* SearchViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -164,11 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C0FFB742889A54300E15177 /* AppDelegate.swift in Sources */,
+				8C0FFB932889C1E600E15177 /* SearchViewController.swift in Sources */,
+				8C0FFB972889CC7C00E15177 /* LinkInfoViewController.swift in Sources */,
 				8C0FFB912889A87800E15177 /* MainCollectionViewCell.swift in Sources */,
 				8C0FFB8F2889A80B00E15177 /* MainCollectionViewController.swift in Sources */,
 				8C0FFB8B2889A5E500E15177 /* MovieInfo.swift in Sources */,
 				8C0FFB762889A54300E15177 /* SceneDelegate.swift in Sources */,
 				8C0FFB8D2889A6E800E15177 /* Movie.swift in Sources */,
+				8C0FFB952889C9E200E15177 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

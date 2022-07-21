@@ -19,8 +19,21 @@ class MainCollectionViewController: UICollectionViewController {
         designCollectionView()
 
         navigationItem.title = "도서 모음"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(tappedRightBarButton))
         navigationItem.rightBarButtonItem?.tintColor = .black
+    }
+    
+    @objc
+    func tappedRightBarButton() {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = sb.instantiateViewController(withIdentifier: SearchViewController.identifier) as? SearchViewController else {
+            return
+        }
+        
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        
+        self.present(nav, animated: true)
     }
     
     func designCollectionView() {
@@ -65,5 +78,14 @@ class MainCollectionViewController: UICollectionViewController {
         cell.configCell(movie: data, row: i)
         
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = sb.instantiateViewController(withIdentifier: DetailViewController.identifier) as? DetailViewController else {
+            return
+        }
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
